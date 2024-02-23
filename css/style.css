@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.navigation {
+    list-style-type: none;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.our-office{
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+.inquiry-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inquiry-form{
+    display: flex; 
+    flex-direction: column;
+}
+
+.output{
+    border:2px;
+}
