@@ -1,24 +1,40 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-.navigation {
+.navigasi{
+    display:-webkit-flex;
+    display:flex;
+    -webkit-justify-content: flex-end;
+    justify-content:flex-end;
     list-style-type: none;
+    background-color: khaki;
 }
 
-.navigation li {
-    display: inline;
-    margin-right: 8px;
+.navigasi a{
+    margin:5px;
+    border-radius: 5px;
+    background: #4584b1;
+    color:#fff;
+    display: block;
+    padding: 10px;
+    text-decoration:none;
+    font-family: cursive;
+    font-size: 12px;
 }
 
-.our-office{
+header{
+    color:#4584b1;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.psyduck-picture{
     display: flex;
+    background-color: #dbdbd8e5;
+    height:200px;
     justify-content: space-around;
+    font-family:cursive;
+    text-align: center;
+    margin: 50px 0px 50px 0px;
 }
 
-.circle-image {
+.facial img {
     width: 100px;
     height: 100px;
     border: 2px solid black;
