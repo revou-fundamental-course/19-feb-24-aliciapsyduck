@@ -27,22 +27,50 @@ header{
 
 .psyduck-picture{
     display: flex;
+    align-items: center;
     background-color: #dbdbd8e5;
-    height:140px;
+    height:200px;
     justify-content: space-around;
     font-family:cursive;
     text-align: center;
-    margin: 50px 0px 50px 0px;
+    overflow: hidden;
 }
 
-.facial img {
+.slide{
+   display: none; 
+}
+
+.slide img {
     width: 100px;
     height: 100px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 50px;
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
+    margin: 0 auto;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+#prevBtn,
+#nextBtn {
+    background-color: #4584b1;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: #355e8a;
 }
 
 .inquiry-box {

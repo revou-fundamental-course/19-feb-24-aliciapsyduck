@@ -23,4 +23,37 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please fill out all required fields with valid information.");
         }
     });
+
+    var slideIndex = 0;
+    showSlides();
+
+    function plusSlides(n) {
+        showSlides((slideIndex += n));
+    }
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex].style.display = "block";
+    }
+
+    document.getElementById("prevBtn").addEventListener("click", function () {
+        plusSlides(-1);
+    });
+
+    document.getElementById("nextBtn").addEventListener("click", function () {
+        plusSlides(1);
+    });
 });

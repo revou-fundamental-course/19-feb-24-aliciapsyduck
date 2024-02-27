@@ -33,26 +33,34 @@
         </h5>
     </header>
 
-    <div class="psyduck-picture">
-        <div style="margin: 20px 0px 0px 0px">
+    <div class="psyduck-picture" id="slideshow-container">
+        <div class="navigation-buttons">
+            <button id="prevBtn" onclick="plusSlides(-1)">❮</button>
+        </div>
+        <div class="slide">
             <div class="facial">
-            <img src="Facial1.jpg">
+            <img src="Facial1.jpg" class="slide-image">
         </div>
             <h5>Mad</h5>
         </div>
-        <div style="margin: 20px 0px 0px 0px">
+        <div class="slide">
             <div class="facial">
-            <img src="Facial2.png">
+            <img src="Facial2.png" class="slide-image">
             </div>
             <h5>Head-ache</h5>
         </div>
-        <div style="margin: 20px 0px 0px 0px">
+        <div class="slide">
             <div class="facial">
-                <img src="Facial3.jpg">    
+                <img src="Facial3.jpg" class="slide-image">    
             </div>
             <h5>Happy</h5>
         </div>
+        <div class="navigation-buttons">
+            <button id="nextBtn" onclick="plusSlides(1)">❯</button>
+        </div>
     </div>
+
+    
 
     <div class="inquiry-box" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
         <form id ="contact-form" class="inquiry-form" style="color:#4584b1">
@@ -80,7 +88,6 @@
             <button type="submit">Submit</button>
         </form>
         <div id="submitted-values"></div>
-        <script src="script.js"></script>
     </div>
     
 </body>
