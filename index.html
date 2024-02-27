@@ -10,15 +10,15 @@
     <ul class="navigasi">
         <li><a href="index.html">Home</a></li>
         <li><a href="profile.html">Our Profile</a></li>
-        <li><a href="#">Photos</a></li>
-        <li><a href="#">Message Us</a></li>
+        <li><a href="#messageus">Message Us</a></li>
         <li><img src="logo.png" style="height:32px;width:auto;margin:5px;border-radius:16px"></li>
     </ul>
     </nav>
-
+    
     <header>
         <h2 id="welcome-message">Welcome <span id="user-name"></span></h2>
         <script src="..\js\script.js"></script>
+        <hr>
         <h4>Have you ever played pokemon?</h4>
         <h5>
         <textaerea style="color:gray;">Psyduck Enthusiasts Unites is dedicated to creating a vibrant community where Psyduck enthusiasts from all walks of life can come together to celebrate their love for this beloved Pokemon. Through innovative events, engaging content, and immersive experiences, we aim to foster connections, inspire creativity, and spread joy among fans worldwide.</textaerea>
@@ -33,28 +33,38 @@
         </h5>
     </header>
 
-    <div class="psyduck-picture">
-        <div style="margin: 20px 0px 0px 0px">
+    <hr>
+
+    <div class="psyduck-picture" id="slideshow-container">
+        <div class="navigation-buttons">
+            <button id="prevBtn" onclick="plusSlides(-1)">❮</button>
+        </div>
+        <div class="slide">
             <div class="facial">
-            <img src="Facial1.jpg">
+            <img src="Facial1.jpg" class="slide-image">
         </div>
             <h5>Mad</h5>
         </div>
-        <div style="margin: 20px 0px 0px 0px">
+        <div class="slide">
             <div class="facial">
-            <img src="Facial2.png">
+            <img src="Facial2.png" class="slide-image">
             </div>
             <h5>Head-ache</h5>
         </div>
-        <div style="margin: 20px 0px 0px 0px">
+        <div class="slide">
             <div class="facial">
-                <img src="Facial3.jpg">    
+                <img src="Facial3.jpg" class="slide-image">    
             </div>
             <h5>Happy</h5>
         </div>
+        <div class="navigation-buttons">
+            <button id="nextBtn" onclick="plusSlides(1)">❯</button>
+        </div>
     </div>
 
-    <div class="inquiry-box" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <hr>
+
+    <div class="inquiry-box" id = messageus style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
         <form id ="contact-form" class="inquiry-form" style="color:#4584b1">
             <br>
             <b><label for="name">Name</label></b>
@@ -80,7 +90,6 @@
             <button type="submit">Submit</button>
         </form>
         <div id="submitted-values"></div>
-        <script src="script.js"></script>
     </div>
     
 </body>
