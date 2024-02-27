@@ -1,0 +1,144 @@
+.navigasi{
+    display:-webkit-flex;
+    display:flex;
+    -webkit-justify-content: flex-end;
+    justify-content:flex-end;
+    list-style-type: none;
+    background-color: khaki;
+}
+
+.navigasi a{
+    margin:5px;
+    border-radius: 5px;
+    background: #4584b1;
+    color:#fff;
+    display: block;
+    padding: 10px;
+    text-decoration:none;
+    font-family: cursive;
+    font-size: 12px;
+}
+
+header{
+    color:#4584b1;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.psyduck-picture{
+    display: flex;
+    align-items: center;
+    background-color: #dbdbd8e5;
+    min-height:200px;
+    padding:20px;
+    justify-content: space-around;
+    font-family:cursive;
+    text-align: center;
+    overflow: hidden;
+    color: #ed8f8f;
+    font-weight: bold;
+}
+
+.slide{
+   display: none; 
+}
+
+.slide img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    margin: 0 auto;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+#prevBtn,
+#nextBtn {
+    background-color: #4584b1;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: #355e8a;
+}
+
+@media only screen and (max-width: 600px) {
+    .psyduck-picture {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .navigation-buttons {
+        margin-top: 0; /* Reset top margin */
+    }
+
+    #prevBtn,
+    #nextBtn {
+        margin: 5px 0; /* Add margin above and below buttons */
+    }
+}
+
+.inquiry-box {
+    display: flex;
+    justify-content: left;
+}
+
+.inquiry-form{
+    display: flex; 
+    flex-direction: column;
+}
+
+.output{
+    border:2px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    color: #4584b1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #4584b1;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#contact-form button {
+    background-color: #4584b1;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#contact-form button:hover {
+    background-color: #355e8a;
+}
