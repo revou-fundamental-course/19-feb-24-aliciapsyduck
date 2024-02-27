@@ -8,47 +8,60 @@
 <body>
     <nav>
     <ul class="navigasi">
-        <li><a href="">Food</a></li>
-        <li><a href="">Skill</a></li>
-        <li><a href="">Photos</a></li>
-        <li><a href="">Message Us</a></li>
-        <li><img src="C:\Users\ALICIA\Documents\19-feb-24-aliciapsyduck\assets\logo.png" style="height:32px;width:auto;margin:5px;border-radius:16px"></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Our Profile</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Message Us</a></li>
+        <li><img src="logo.png" style="height:32px;width:auto;margin:5px;border-radius:16px"></li>
     </ul>
     </nav>
 
     <header>
-        <h2>Hi, Welcome To Psyduck World!</h2>
+        <h2 id="welcome-message">Welcome <span id="user-name"></span></h2>
+        <script src="..\js\script.js"></script>
         <h4>Have you ever played pokemon?</h4>
         <h5>
-        <textaerea style="color:gray;">Psyduck Enthusiasts Unites is dedicated to creating a vibrant community where Psyduck enthusiasts from all walks of life can come together to celebrate their love for this beloved Pokemon. Through innovative events, engaging content, and immersive experiences, we aim to foster connections, inspire creativity, and spread joy among fans worldwide.</textaerea></h5>
+        <textaerea style="color:gray;">Psyduck Enthusiasts Unites is dedicated to creating a vibrant community where Psyduck enthusiasts from all walks of life can come together to celebrate their love for this beloved Pokemon. Through innovative events, engaging content, and immersive experiences, we aim to foster connections, inspire creativity, and spread joy among fans worldwide.</textaerea>
+        </h5>
+        <h4>Our Vision</h4>
+        <h5>
+            <textaerea style="color:gray;">At Psyduck Enthusiasts Unite, our vision is to create a global community where Psyduck enthusiasts come together to share their passion, build meaningful connections, and contribute to the collective joy surrounding this beloved Pokémon. We envision a world where the charm of Psyduck brings people closer, fostering a sense of unity and celebration.
+        </h5>
+        <h4>Our Mission</h4>
+        <h5>
+            <textaerea style="color:gray;">Our mission at Psyduck Enthusiasts Unite is to provide a dedicated platform for fans of Psyduck to connect, engage, and express their love for this endearing Water-type Pokémon. We strive to offer a diverse range of activities, from community events and online forums to exclusive merchandise, all designed to enhance the Psyduck experience for our members. Through our mission, we aim to build a vibrant and inclusive community that celebrates the unique qualities of Psyduck and brings joy to every enthusiast.
         </h5>
     </header>
 
     <div class="psyduck-picture">
         <div style="margin: 20px 0px 0px 0px">
             <div class="facial">
-            <img src="C:\Users\ALICIA\Documents\19-feb-24-aliciapsyduck\assets\Facial1.jpg">
+            <img src="Facial1.jpg">
         </div>
             <h5>Mad</h5>
         </div>
         <div style="margin: 20px 0px 0px 0px">
             <div class="facial">
-            <img src="C:\Users\ALICIA\Documents\19-feb-24-aliciapsyduck\assets\Facial2.png">
+            <img src="Facial2.png">
             </div>
             <h5>Head-ache</h5>
         </div>
         <div style="margin: 20px 0px 0px 0px">
             <div class="facial">
-                <img src="C:\Users\ALICIA\Documents\19-feb-24-aliciapsyduck\assets\Facial3.jpg">    
+                <img src="Facial3.jpg">    
             </div>
             <h5>Happy</h5>
         </div>
     </div>
 
     <div class="inquiry-box" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-        <form class="inquiry-form" style="color:#4584b1">
+        <form id ="contact-form" class="inquiry-form" style="color:#4584b1">
+            <br>
             <b><label for="name">Name</label></b>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required>
+            <br>
+            <b><label for="email">Email</label></b>
+            <input type="email" id="email" name="email" required>
             <br>
             <b><label for="skill">Physical Strenght</label></b>
             <select id="skill">
@@ -63,7 +76,11 @@
                 <option value="disable">Disable</option>
                 <option value="zen-headbutt">Zen Headbutt</option>
             </select>
+            <br>
+            <button type="submit">Submit</button>
         </form>
+        <div id="submitted-values"></div>
+        <script src="script.js"></script>
     </div>
     
 </body>
