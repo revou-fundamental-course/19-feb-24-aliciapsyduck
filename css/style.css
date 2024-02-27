@@ -22,12 +22,13 @@
 header{
     color:#4584b1;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
 
 .psyduck-picture{
     display: flex;
     background-color: #dbdbd8e5;
-    height:200px;
+    height:140px;
     justify-content: space-around;
     font-family:cursive;
     text-align: center;
@@ -46,7 +47,7 @@ header{
 
 .inquiry-box {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
 }
 
 .inquiry-form{
