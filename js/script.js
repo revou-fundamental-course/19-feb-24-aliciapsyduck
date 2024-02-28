@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
         slides[slideIndex].style.display = "block";
     }
     
-    
     document.getElementById("prevBtn").addEventListener("click", function () {
         plusSlides(-1);
     });
